@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 8080;
 mongoose.set("strictQuery", false);
 mongoose
   .connect(process.env.MONGODB_URL)
-  .then(() => console.log("Connect to Databse"))
+  .then(() => console.log("Connected to Database"))
   .catch((err) => console.log(err));
 
 //schema
